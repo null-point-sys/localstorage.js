@@ -27,4 +27,6 @@ store.subscribe(() => {
 
 y listo!!
 
+instalamos node-uuid por npm para error de two children
+
   
