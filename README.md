@@ -13,7 +13,7 @@ y se pasa una instancia del método loadState() al create store:
 const persistedState = loadState();
 export default createStore(rootReducer, persistedState);
   
-> donde se importe el store ( import store from "./redux/store"; )  
+> donde se importe el store ( i.e.  donde se encuentre : import store from "./redux/store"; )  
 
 importamos el saveState() método de localstorage
 
