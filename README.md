@@ -27,6 +27,22 @@ store.subscribe(() => {
 
 y listo!!
 
-instalamos node-uuid por npm para error de two children
+instalamos node-uuid por npm para error de two children.
+
+> en redux/actions.js 
+
+import { v4 } from "node-uuid";
+
+y reemplazamos: id: ++nextTodoId, por v4() 
+
+export const addTodo = content => ({
+  type: ADD_TODO,
+  payload: {
+    // id: ++nextTodoId,
+    id: v4(),
+    content
+  }
+});
+
 
   
